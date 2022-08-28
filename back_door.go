@@ -49,3 +49,5 @@ func handler(conn net.Conn) {
 	go io.Copy(conn, rp) // 命令的输出，重定向到tcp输出  
 	cmd.Run()   // 为什么不能先Run 再copy？
 }
+
+// 测试  elnet 127.0.0.1 8080  然后输入ls
