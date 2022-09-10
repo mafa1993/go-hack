@@ -11,3 +11,7 @@
 # 基础知识
 
 1. xml.NewDecoder(filecontent).Decode(rlt)    xml 解析
+
+用法
+
+go run main.go -site "查询的site" -filetype "文件类型 docx等"
