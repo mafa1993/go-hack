@@ -4,7 +4,6 @@ import (
 	"io"
 	"log"
 	"net"
-	"net/http"
 )
 
 const dst_host = "www.baidu.com:80"
@@ -32,8 +31,7 @@ func handler(src net.Conn) {
 		log.Fatalln("连接出错", err)
 	}
 	defer dst.Close()
-http.HandlerFunc()
-http.HandleFunc()
+
 	// 防止阻塞，使用协程
 	go func() {
 		// 将源的内容发送给dst
