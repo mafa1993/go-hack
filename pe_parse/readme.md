@@ -24,3 +24,5 @@ type FileHeader struct {
 }
 ```
 1. 如果需要增加新分区，插入后门代码，需要修改这里的分区数属性
+2. 增加新的Sections
+3. 或者在imagebase中增加shellcode
