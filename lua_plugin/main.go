@@ -31,7 +31,7 @@ func main() {
 
 	// 遍历所有lua脚本
 	for idx := range files {
-		fmt.Println("plugin ", files[idx])
+		fmt.Println("plugin ", file s[idx])
 		f = fmt.Sprintf("%s%s", PluginsDir, files[idx].Name())
 
 		// 执行lua脚本
