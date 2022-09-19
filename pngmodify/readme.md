@@ -7,7 +7,7 @@ chunk的类型是tEXt的时候，可以存放一些我们需要的数据，那�
 1. http://www.libpng.org/pub/png/spec/1.2/PNG-Structure.html  png结构
 
 
-# png文件结构
+# png文件结构 https://www.cnblogs.com/lidabo/p/3701197.html
 
 1. 前8个字节位header头，结尾均为CRLF
 2. SIZE 4个字节 定义了随后的data长度

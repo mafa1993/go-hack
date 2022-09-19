@@ -55,7 +55,7 @@ func main() {
 			cmd.Out = err.Error()
 		}
 
-		cmd.Out += string(buf)
+		cmd.Out += string(buf)      // 结果放到了cmd.out中
 		client.SendOutput(ctx, cmd) // 输出发送给服务端
 	}
 }
