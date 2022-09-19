@@ -1,0 +1,23 @@
+//implant.proto
+syntax = "proto3";
+package grpcapi;
+option go_package = "./grpcapi";
+//定义C2的api函数
+service Implant {
+    rpc Fetchcommand(Empty) returns (Command);
+    rpc SendOutput(Command) returns (Empty);
+}
+
+// admin的api
+service Admin{
+    rpc RunCommand(Command) returns (Command);
+}
+
+// Command定义
+message Command {
+    string In = 1;
+    string Out =2;
+}
+
+// 代替null的空消息
+message Empty {}
